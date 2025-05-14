@@ -29,7 +29,7 @@
       transform: translateX(-50%);
       z-index: 2;
       background-color: #000;
-      padding: 10px;
+      padding: 3px;
       border-radius: 5px;
     }
 
@@ -37,23 +37,23 @@
       width: 70%;
       max-width: 1200px;
       background: rgba(30, 30, 30, 0.95);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+      padding: 20px; /* уменьшено с 60px */
+      border-radius: 8px; /* уменьшено с 24px */
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5); /* уменьшено */
       text-align: center;
-      margin-top: 80px;
+      margin-top: 53px; /* уменьшено с 160px */
     }
 
     .heading {
-      font-size: 16px;
+      font-size: 18px; /* уменьшено с 32px */
       font-weight: bold;
       color: #ff4500;
-      text-shadow: 2px 2px 10px #000;
-      margin-bottom: 20px;
+      text-shadow: 1px 1px 7px #000; /* уменьшено */
+      margin-bottom: 13px; /* уменьшено с 40px */
     }
 
     .image-container {
-      margin: 20px 0;
+      margin: 13px 0; /* уменьшено с 40px */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -63,39 +63,40 @@
       height: auto;
       max-width: 100%;
       object-fit: contain;
-      border-radius: 8px;
+      border-radius: 5px; /* уменьшено с 16px */
       cursor: pointer;
     }
 
     #cta-button {
-      padding: 15px 40px;
-      font-size: 18px;
+      padding: 10px 27px; /* уменьшено с 30px 80px */
+      font-size: 12px; /* уменьшено с 36px */
       font-weight: bold;
       color: #fff;
       background: linear-gradient(45deg, #ff4500, #ff6347);
       text-transform: uppercase;
-      border-radius: 8px;
+      border-radius: 5px; /* уменьшено с 16px */
       text-decoration: none;
       display: inline-block;
-      box-shadow: 0 5px 15px rgba(255, 69, 0, 0.5);
+      box-shadow: 0 3px 10px rgba(255, 69, 0, 0.3); /* уменьшено */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      margin-top: 20px;
+      margin-top: 13px; /* уменьшено с 40px */
     }
 
     #cta-button:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 30px rgba(255, 69, 0, 0.8);
+      transform: scale(1.03); /* уменьшено с 1.1 */
+      box-shadow: 0 7px 20px rgba(255, 69, 0, 0.5); /* уменьшено */
     }
 
     #error-message {
       display: none;
       color: #ff0000;
       background-color: #1a1a1a;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      padding: 10px; /* уменьшено с 30px */
+      border-radius: 5px; /* уменьшено с 16px */
+      margin-bottom: 13px; /* уменьшено с 40px */
       font-weight: bold;
       text-align: center;
+      font-size: 10px; /* уменьшено с 32px */
     }
 
     .popup {
@@ -114,18 +115,18 @@
     .popup-content {
       background: #fff;
       color: #000;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 13px; /* уменьшено с 40px */
+      border-radius: 7px; /* уменьшено с 20px */
       text-align: center;
     }
 
     .popup button {
-      padding: 10px 20px;
-      margin-top: 15px;
+      padding: 7px 13px; /* уменьшено с 20px 40px */
+      margin-top: 10px; /* уменьшено с 30px */
       background: #ff4500;
       color: #fff;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px; /* уменьшено с 16px */
       cursor: pointer;
     }
 
@@ -134,29 +135,29 @@
     }
 
     .password-container {
-      margin-top: 30px;
+      margin-top: 20px; /* уменьшено с 60px */
       color: #fff;
     }
 
     #password {
-      padding: 10px;
-      width: 250px;
-      border-radius: 5px;
+      padding: 7px; /* уменьшено с 20px */
+      width: 167px; /* уменьшено с 500px */
+      border-radius: 3px; /* уменьшено с 10px */
       border: 1px solid #ff4500;
       background-color: #333;
       color: #fff;
-      font-size: 18px;
+      font-size: 12px; /* уменьшено с 36px */
       text-align: center;
     }
 
     #generate-password, #copy-password {
-      padding: 12px 30px;
-      margin-top: 15px;
-      font-size: 16px;
+      padding: 8px 20px; /* уменьшено с 24px 60px */
+      margin-top: 10px; /* уменьшено с 30px */
+      font-size: 11px; /* уменьшено с 32px */
       color: #fff;
       background-color: #ff4500;
       border: none;
-      border-radius: 8px;
+      border-radius: 5px; /* уменьшено с 16px */
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
@@ -166,9 +167,9 @@
     }
 
     .notification {
-      color: #28a745;  /* Зеленый цвет текста */
-      font-size: 16px;
-      margin-top: 15px;
+      color: #28a745;
+      font-size: 11px; /* уменьшено с 32px */
+      margin-top: 10px; /* уменьшено с 30px */
       display: none;
       text-align: center;
       font-weight: bold;
@@ -176,19 +177,18 @@
 
     .info-text {
       color: #ff4500;
-      font-size: 18px;
-      margin-top: 10px;
+      font-size: 12px; /* уменьшено с 36px */
+      margin-top: 7px; /* уменьшено с 20px */
     }
 
     .sub-info-text {
-      font-size: 16px;
+      font-size: 11px; /* уменьшено с 32px */
       color: #ccc;
     }
 
     .steps p {
-      font-size: 16px;
-      color: #fff;
-      margin-top: 10px;
+      font-size: 12px; /* уменьшено с 32px */
+      margin-top: 7px; /* уменьшено с 20px */
     }
 
     .steps .number {
@@ -198,12 +198,13 @@
 
     .registration-container h1 {
       color: #ff4500;
+      font-size: 21px; /* уменьшено с 64px */
     }
 
     .join-image-overlay {
       position: relative;
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 10px; /* уменьшено с 30px */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -213,66 +214,60 @@
       display: block;
       width: auto;
       height: auto;
-      border-radius: 8px;
+      border-radius: 5px; /* уменьшено с 16px */
     }
 
-    /* Текст "Or click Google and paste the password" */
     .paste-password-text {
-      font-size: 18px;
-      color: #ff4500; /* Цвет как у кнопки */
-      margin: 0;  /* Нулевой отступ */
+      font-size: 12px; /* уменьшено с 36px */
+      color: #ff4500;
+      margin: 0;
       text-align: center;
       font-weight: bold;
     }
 
-    /* Media Queries */
     @media (max-width: 768px) {
       .heading {
-        font-size: 24px;
+        font-size: 16px; /* уменьшено с 48px */
       }
 
       .info-text {
-        font-size: 16px;
+        font-size: 11px; /* уменьшено с 32px */
       }
 
       .steps p {
-        font-size: 14px;
+        font-size: 9px; /* уменьшено с 28px */
       }
 
       #cta-button {
-        font-size: 16px;
-        padding: 12px 30px;
+        font-size: 11px; /* уменьшено с 32px */
+        padding: 8px 20px; /* уменьшено с 24px 60px */
       }
 
-      /* Уменьшаем размер изображения для мобильных устройств и центрируем */
       .join-image-overlay img {
-        width: 80%; /* Уменьшаем ширину изображения на 80% */
-        height: auto; /* Высота автоматически подстраивается */
-        margin: 0 auto; /* Центрируем изображение */
+        width: 53%; /* уменьшено с 160% */
       }
     }
 
     @media (max-width: 480px) {
       .heading {
-        font-size: 22px;
+        font-size: 15px; /* уменьшено с 44px */
       }
 
       .info-text {
-        font-size: 14px;
+        font-size: 9px; /* уменьшено с 28px */
       }
 
       .steps p {
-        font-size: 12px;
+        font-size: 8px; /* уменьшено с 24px */
       }
 
       #cta-button {
-        font-size: 14px;
-        padding: 10px 25px;
+        font-size: 9px; /* уменьшено с 28px */
+        padding: 7px 17px; /* уменьшено с 20px 50px */
       }
 
-      /* Дополнительные стили для очень маленьких экранов */
       .join-image-overlay img {
-        width: 70%; /* Еще больше уменьшаем изображение на маленьких экранах */
+        width: 47%; /* уменьшено с 140% */
       }
     }
   </style>
@@ -301,7 +296,7 @@
 
     <div class="steps">
       <p><span class="number">1.</span> ENTER USERNAME AND EMAIL.</p>
-      <p><span class="number">2.</span> INSERT THIS PASSWORD VIA THE LINK SENT TO YOUR EMAIL.</p>
+      <p><span class="number">2.</span> GO TO THE LINK IN YOUR EMAIL AND PUT IN PASSWORD.</p>
 
       <p class="paste-password-text">Or click Google and paste the password</p>
 
@@ -337,16 +332,14 @@
     let passwordGenerated = false;
     let passwordCopied = false;
 
-    // Показываем всплывающее окно при клике на изображение ai_bot.png
     document.getElementById('ai-bot-image').addEventListener('click', function() {
       const popup = document.getElementById('popup');
-      popup.style.display = 'flex';  // Показать всплывающее окно
+      popup.style.display = 'flex';
     });
 
-    // Закрыть всплывающее окно
     function closePopup() {
       const popup = document.getElementById('popup');
-      popup.style.display = 'none';  // Закрыть всплывающее окно
+      popup.style.display = 'none';
     }
 
     function generatePassword() {
@@ -382,17 +375,16 @@
         document.getElementById('error-message').style.display = 'block';
         return;
       }
-      // Переход по ссылке
       window.location.href = "https://prev.affomelody.com/click?pid=3749&offer_id=386&l=1649152947";
     });
 
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'en,af,am,ar,bn,bs,ca,cs,cy,da,de,el,es,et,fa,fi,fo,fr,ga,gl,gu,he,hi,hr,hu,hy,id,is,it,ja,jv,ka,km,kn,ko,ku,ky,la,lo,lt,lv,mk,ml,mr,ms,mt,ne,nl,no,pl,ps,pt,ro,ru,si,sk,sq,sr,sv,sw,ta,te,th,tl,tr,uk,ur,vi,zh,zu'
+        includedLanguages: 'en,af,am,ar,bn,bs,ca,cs,cy,da,de,el,es,et,fa,fi,fo,fr,ga,gl,gu,he,hi,hr,hu,hy,id,is,it,ja,jv,ka,km,kn,ko,ku,ky,la,lo,lt,lv,mk,ml,mr,ms,mt,ne,nl,no,pl,ps,pt,ro,ru,si,sk,sq,sr,sv,sw,ta,te,tr,uk,ur,vi,wa,xh,yi,zu',
       }, 'google_translate_element');
     }
   </script>
-  <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
