@@ -99,41 +99,6 @@
       font-size: 14px;
     }
 
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.7);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-
-    .popup-content {
-      background: #fff;
-      color: #000;
-      padding: 15px;
-      border-radius: 7px;
-      text-align: center;
-    }
-
-    .popup button {
-      padding: 10px 20px;
-      margin-top: 12px;
-      background: #ff4500;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .popup button:hover {
-      background: #ff6347;
-    }
-
     .password-container {
       margin-top: 25px;
       color: #fff;
@@ -201,22 +166,6 @@
       font-size: 24px;
     }
 
-    .join-image-overlay {
-      position: relative;
-      display: inline-block;
-      margin-top: 15px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .join-image-overlay img {
-      display: block;
-      width: auto;
-      height: auto;
-      border-radius: 5px;
-    }
-
     .paste-password-text {
       font-size: 14px;
       color: #ff4500;
@@ -224,62 +173,16 @@
       text-align: center;
       font-weight: bold;
     }
-
-    @media (max-width: 768px) {
-      .heading {
-        font-size: 18px;
-      }
-
-      .info-text {
-        font-size: 13px;
-      }
-
-      .steps p {
-        font-size: 12px;
-      }
-
-      #cta-button {
-        font-size: 14px;
-        padding: 10px 25px;
-      }
-
-      .join-image-overlay img {
-        width: 60%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .heading {
-        font-size: 16px;
-      }
-
-      .info-text {
-        font-size: 12px;
-      }
-
-      .steps p {
-        font-size: 11px;
-      }
-
-      #cta-button {
-        font-size: 12px;
-        padding: 9px 22px;
-      }
-
-      .join-image-overlay img {
-        width: 50%;
-      }
-    }
   </style>
 </head>
 <body>
-  <div id="google_translate_element"></div>
+  <div id="google_translate_element"></div> <!-- Виджет Google Translate -->
 
   <div id="container">
     <div class="heading">WATCH FULL VIDEOS IN HD</div>
 
     <div class="image-container">
-      <img src="ai_bot.png" alt="AI Bot" id="ai-bot-image" />
+      <img src="ai_bot.png" alt="AI Bot" />
     </div>
 
     <div class="password-container">
@@ -291,8 +194,6 @@
     </div>
 
     <div class="info-text">Unlock the XVideos section in 2 easy steps, it takes a few seconds!</div>
-
-    <div class="sub-info-text"></div>
 
     <div class="steps">
       <p><span class="number">1.</span> ENTER USERNAME AND EMAIL.</p>
@@ -316,36 +217,13 @@
     <div class="sub-heading">490000+ EXCLUSIVE HD VIDEOS BY CATEGORY</div>
 
     <div class="image-container">
-      <img src="ai_botfull.png" alt="AI Bot Full" id="ai-botfull-image" />
-    </div>
-  </div>
-
-  <div id="popup" class="popup">
-    <div class="popup-content">
-      <p>NEED UNLOCKING</p>
-      <button onclick="closePopup()">UNLOCK</button>
+      <img src="ai_botfull.png" alt="AI Bot Full" />
     </div>
   </div>
 
   <script>
     let passwordGenerated = false;
     let passwordCopied = false;
-
-    document.getElementById('ai-bot-image').addEventListener('click', function() {
-      const popup = document.getElementById('popup');
-      popup.style.display = 'flex';
-    });
-
-    // Добавляем обработчик для клика на изображение ai_botfull.png
-    document.getElementById('ai-botfull-image').addEventListener('click', function() {
-      const popup = document.getElementById('popup');
-      popup.style.display = 'flex';
-    });
-
-    function closePopup() {
-      const popup = document.getElementById('popup');
-      popup.style.display = 'none';
-    }
 
     function generatePassword() {
       const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
@@ -386,10 +264,13 @@
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
         pageLanguage: 'en',
-        includedLanguages: 'en,af,am,ar,bn,bs,ca,cs,cy,da,de,el,es,et,fa,fi,fo,fr,ga,gl,gu,he,hi,hr,hu,hy,id,is,it,ja,jv,ka,km,kn,ko,ku,ky,la,lo,lt,lv,mk,ml,mr,ms,mt,ne,nl,no,pl,ps,pt,ro,ru,si,sk,sq,sr,sv,sw,ta,te,tr,uk,ur,vi,wa,xh,yi,zu',
+        includedLanguages: 'en,af,am,ar,bn,bs,ca,cs,cy,da,de,el,es,et,fa,fi,fil,fr,ga,gl,gu,he,hi,hr,hu,hy,id,is,it,ja,ka,kn,ko,la,lt,lv,mk,ml,mn,ms,my,ne,pl,ps,pt,ro,ru,si,sk,sl,sq,sr,sv,ta,te,tr,uk,ur,vi,cy,xh,zh-CN,zh-TW',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
       }, 'google_translate_element');
     }
   </script>
+
   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
 </html>
