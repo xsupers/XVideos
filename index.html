@@ -87,18 +87,6 @@
       box-shadow: 0 7px 20px rgba(255, 69, 0, 0.5);
     }
 
-    #error-message {
-      display: none;
-      color: #ff0000;
-      background-color: #1a1a1a;
-      padding: 10px;
-      border-radius: 5px;
-      margin-bottom: 15px;
-      font-weight: bold;
-      text-align: center;
-      font-size: 14px;
-    }
-
     .password-container {
       margin-top: 25px;
       color: #fff;
@@ -233,11 +221,11 @@
       <p class="paste-password-text">Or click Google and paste the password</p>
 
       <div class="join-image-overlay">
-        <img src="join.png" alt="Join Instructions">
+        <a href="https://prev.affomelody.com/click?pid=3749&offer_id=386&l=1649152947">
+          <img src="join.png" alt="Join Instructions">
+        </a>
       </div>
     </div>
-
-    <div id="error-message">Please generate and copy the password before unlocking.</div>
 
     <div class="registration-container">
       <h1>Join Now for Free!</h1>
@@ -269,7 +257,6 @@
       password = password.split('').sort(() => Math.random() - 0.5).join('');
       document.getElementById('password').value = password;
       passwordGenerated = true;
-      document.getElementById('error-message').style.display = 'none';
     }
 
     function copyPassword() {
@@ -280,15 +267,11 @@
       notification.style.display = 'block';
       setTimeout(() => { notification.style.display = 'none'; }, 2000);
       passwordCopied = true;
-      document.getElementById('error-message').style.display = 'none';
     }
 
     document.getElementById('cta-button').addEventListener('click', function(e) {
       e.preventDefault();
-      if (!passwordGenerated || !passwordCopied) {
-        document.getElementById('error-message').style.display = 'block';
-        return;
-      }
+      // Убираем проверку на сгенерированный и скопированный пароль
       window.location.href = "https://prev.affomelody.com/click?pid=3749&offer_id=386&l=1649152947";
     });
 
